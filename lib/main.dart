@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:zee_palm_tasks/firebase_options.dart';
-import 'package:zee_palm_tasks/screens/login_screen.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/screens/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

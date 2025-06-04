@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:zee_palm_tasks/providers/auth_provider.dart';
-import 'package:zee_palm_tasks/screens/login_screen.dart';
-import 'package:zee_palm_tasks/screens/video_feed_screen.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/auth_provider.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/screens/login_screen.dart';
+import 'package:zee_palm_tasks/features/video/presentation/screens/video_feed_screen.dart';
 
 class AuthWrapper extends ConsumerWidget {
   const AuthWrapper({super.key});

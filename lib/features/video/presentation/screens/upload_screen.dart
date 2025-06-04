@@ -7,9 +7,9 @@ import 'package:video_thumbnail/video_thumbnail.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:zee_palm_tasks/providers/auth_provider.dart';
-import 'package:zee_palm_tasks/utils/snakbar.dart';
-import 'package:zee_palm_tasks/widgets/video_player.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/auth_provider.dart';
+import 'package:zee_palm_tasks/core/utils/snakbar.dart';
+import 'package:zee_palm_tasks/features/video/presentation/widgets/video_player.dart';
 
 class UploadScreen extends ConsumerStatefulWidget {
   const UploadScreen({super.key});

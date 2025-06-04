@@ -753,12 +753,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:zee_palm_tasks/providers/auth_provider.dart';
-import 'package:zee_palm_tasks/providers/video_provider.dart';
-import 'package:zee_palm_tasks/screens/upload_screen.dart';
-import 'package:zee_palm_tasks/utils/snakbar.dart';
-import 'package:zee_palm_tasks/widgets/video_action_bars.dart';
-import 'package:zee_palm_tasks/widgets/video_player.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/auth_provider.dart';
+import 'package:zee_palm_tasks/features/video/presentation/video_provider.dart';
+import 'package:zee_palm_tasks/features/video/presentation/screens/upload_screen.dart';
+import 'package:zee_palm_tasks/core/utils/snakbar.dart';
+import 'package:zee_palm_tasks/features/video/presentation/widgets/video_action_bars.dart';
+import 'package:zee_palm_tasks/features/video/presentation/widgets/video_player.dart';
 
 class VideoFeedScreen extends ConsumerWidget {
   const VideoFeedScreen({super.key});

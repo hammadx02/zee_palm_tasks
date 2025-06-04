@@ -278,11 +278,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:zee_palm_tasks/providers/auth_provider.dart';
-import 'package:zee_palm_tasks/screens/sign_up_screen.dart';
-import 'package:zee_palm_tasks/screens/video_feed_screen.dart';
-import 'package:zee_palm_tasks/widgets/auth_field.dart';
-import 'package:zee_palm_tasks/widgets/auth_gradient_button.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/auth_provider.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/screens/sign_up_screen.dart';
+import 'package:zee_palm_tasks/features/video/presentation/screens/video_feed_screen.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/widgets/auth_field.dart';
+import 'package:zee_palm_tasks/features/auth/presentation/widgets/auth_gradient_button.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});

@@ -399,7 +399,7 @@ import 'package:dartz/dartz.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:gallery_saver_plus/gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:zee_palm_tasks/models/video_model.dart';
+import 'package:zee_palm_tasks/features/video/data/models/video_model.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 import 'dart:io';

@@ -98,8 +98,8 @@
 // });
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:zee_palm_tasks/models/video_model.dart';
-import 'package:zee_palm_tasks/repositories/video_repo.dart';
+import 'package:zee_palm_tasks/features/video/data/models/video_model.dart';
+import 'package:zee_palm_tasks/features/video/data/repositories/video_repo.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 

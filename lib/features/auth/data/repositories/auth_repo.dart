@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:zee_palm_tasks/errors/failures.dart';
+import 'package:zee_palm_tasks/core/errors/failures.dart';
 
 class AuthRepository {
   final FirebaseAuth _firebaseAuth;
