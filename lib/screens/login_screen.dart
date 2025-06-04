@@ -79,9 +79,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               const SizedBox(height: 30),
               AuthGradientButton(
                 text: 'Sign In',
-                onPressed: () {
-                  isLoading ? null : () => signIn();
-                },
+                onPressed: isLoading ? null : () => signIn(),
+
+                // onPressed: () {
+                //   isLoading ? null : () => signIn();
+                // },
               ),
               const SizedBox(height: 20),
               GestureDetector(
