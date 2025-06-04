@@ -994,13 +994,13 @@ class VideoFeedScreen extends ConsumerWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 32),
-                _buildModernButton(
-                  context: context,
-                  onPressed: () => ref.read(videosProvider.notifier).refresh(),
-                  text: 'Try Again',
-                  isPrimary: true,
-                  colorScheme: colorScheme,
-                ),
+                // _buildModernButton(
+                //   context: context,
+                //   onPressed: () => ref.read(videosProvider).refresh(),
+                //   text: 'Try Again',
+                //   isPrimary: true,
+                //   colorScheme: colorScheme,
+                // ),
               ],
             ),
           )
