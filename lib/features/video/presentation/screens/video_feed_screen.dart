@@ -71,7 +71,7 @@ class VideoFeedScreen extends ConsumerWidget {
     return AppBar(
       elevation: 0,
       scrolledUnderElevation: 0,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       flexibleSpace: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -119,28 +119,28 @@ class VideoFeedScreen extends ConsumerWidget {
         duration: 400.ms,
         curve: Curves.easeOutBack,
       ),
-      actions: [
-        Container(
-          margin: const EdgeInsets.only(right: 16),
-          decoration: BoxDecoration(
-            color: colorScheme.errorContainer.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              color: colorScheme.error.withOpacity(0.2),
-              width: 1,
-            ),
-          ),
-          child: IconButton(
-            icon: Icon(
-              Icons.logout_rounded,
-              color: colorScheme.error,
-              size: 22,
-            ),
-            onPressed: () => ref.read(authRepositoryProvider).signOut(),
-            tooltip: 'Sign Out',
-          ),
-        ),
-      ],
+      // actions: [
+      //   Container(
+      //     margin: const EdgeInsets.only(right: 16),
+      //     decoration: BoxDecoration(
+      //       color: colorScheme.errorContainer.withOpacity(0.1),
+      //       borderRadius: BorderRadius.circular(12),
+      //       border: Border.all(
+      //         color: colorScheme.error.withOpacity(0.2),
+      //         width: 1,
+      //       ),
+      //     ),
+      //     child: IconButton(
+      //       icon: Icon(
+      //         Icons.logout_rounded,
+      //         color: colorScheme.error,
+      //         size: 22,
+      //       ),
+      //       onPressed: () => ref.read(authRepositoryProvider).signOut(),
+      //       tooltip: 'Sign Out',
+      //     ),
+      //   ),
+      // ],
     );
   }
 
