@@ -13,6 +13,15 @@ final storageProvider = Provider<FirebaseStorage>((ref) {
   return FirebaseStorage.instance;
 });
 
+final userVideosProvider = FutureProvider.family<List<VideoModel>, String>((
+  ref,
+  userId,
+) async {
+  final repository = ref.read(videoRepositoryProvider);
+  final result = await repository.getUserVideos(userId);
+  return result.fold((l) => throw l, (r) => r);
+});
+
 final videoRepositoryProvider = Provider<VideoRepository>((ref) {
   return VideoRepository(
     ref.read(firestoreProvider),

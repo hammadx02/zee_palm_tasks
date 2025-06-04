@@ -22,6 +22,52 @@ class VideoRepository {
     }
   }
 
+  Future<Either<Failure, List<VideoModel>>> getUserVideos(String userId) async {
+    try {
+      final snapshot =
+          await _firestore
+              .collection('videos')
+              .where('authorId', isEqualTo: userId)
+              .get();
+      final videos =
+          snapshot.docs.map((doc) => VideoModel.fromMap(doc.data())).toList();
+      return Right(videos);
+    } catch (e) {
+      return Left(Failure('Failed to fetch user videos'));
+    }
+  }
+
+  Future<Either<Failure, void>> deleteVideo(
+    String videoId,
+    String userId,
+  ) async {
+    try {
+      final doc = await _firestore.collection('videos').doc(videoId).get();
+      if (!doc.exists || doc.data()?['authorId'] != userId) {
+        return Left(Failure('Not authorized to delete this video'));
+      }
+
+      // Delete video from storage
+      final videoUrl = doc.data()?['videoUrl'];
+      if (videoUrl != null) {
+        await _storage.refFromURL(videoUrl).delete();
+      }
+
+      // Delete thumbnail from storage
+      final thumbnailUrl = doc.data()?['thumbnailUrl'];
+      if (thumbnailUrl != null) {
+        await _storage.refFromURL(thumbnailUrl).delete();
+      }
+
+      // Delete document
+      await _firestore.collection('videos').doc(videoId).delete();
+
+      return const Right(null);
+    } catch (e) {
+      return Left(Failure('Failed to delete video'));
+    }
+  }
+
   Future<Either<Failure, void>> likeVideo({
     required String videoId,
     required String userId,
