@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319076379305",
+    "project_id": "rasaye-f99bf",
+    "storage_bucket": "rasaye-f99bf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319076379305:android:df45b30466d77009ed17b8",
+        "android_client_info": {
+          "package_name": "com.example.rasaye_fyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArCUaNY0YlNygI_KvEBgzVOFiwK-i2IVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319076379305:android:d12ff62bc95cea2ded17b8",
+        "android_client_info": {
+          "package_name": "com.example.zee_palm_tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArCUaNY0YlNygI_KvEBgzVOFiwK-i2IVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
