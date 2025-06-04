@@ -135,7 +135,7 @@ class VideoFeedScreen extends ConsumerWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          _navigateToUpload;
+          _navigateToUpload();
         },
         child: const Icon(Icons.add),
       ),
